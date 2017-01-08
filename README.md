@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Module: Hello World
 The `helloworld` module is one of the default modules of the MagicMirror. It is a simple way to display a static text on the mirror.
 ## Using the module
@@ -40,3 +41,6 @@ The following properties can be configured:
 		</tr>
 	</tbody>
 </table>
+=======
+# MMM-Garbage
+>>>>>>> 128f56ca96c1851519b48a9a39c250fab8da7f17
