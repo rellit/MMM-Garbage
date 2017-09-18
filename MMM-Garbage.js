@@ -7,11 +7,11 @@
  * MIT Licensed.
  */
 
-Module.register("garbage",{
+Module.register("MMM-Garbage",{
 
 	// Default module config.
 	defaults: {
-		text: "",
+		text: "Lade...",
 		updateInterval: 30000,
 		fadeSpeed: 4000
 	},
@@ -69,12 +69,10 @@ Module.register("garbage",{
     		var today = moment(new Date());
 	    	var tomorrow = moment(new Date()).add(1, 'days');
 		var twodays = moment(new Date()).add(2, 'days');
-
+		var text = '';
 		this.garbage.forEach(function(tonne) {
-			var text = '';
 			tonne.leerungen.forEach(function(leerung_date) {
 				leerung = moment(leerung_date);
-				text = '';
 				if (today.isSame(leerung, 'day'))
 			    		text += '<span class="garbageSpan ' + tonne.messageClass + '"><div>' + tonne.name + ' wird heute geleert</div></span>';
 				if (tomorrow.isSame(leerung, 'day'))
@@ -83,7 +81,8 @@ Module.register("garbage",{
 			    		text += '<span class="garbageSpan ' + tonne.messageClass + '"><div>' + tonne.name + ' wird übermorgen geleert</div></span>';
 				
 			});
-			wrapper.innerHTML += text;
+			wrapper.innerHTML = '';
 		});
+		wrapper.innerHTML += text;
 	}
 });

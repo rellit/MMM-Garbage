@@ -8,14 +8,14 @@
 
 .garbageSpan {
     text-decoration:none;
-    display:block;
+    display:inline-block;
     height:150px;
     width:150px;
     padding:15px;
     margin:20px;
-    float:left;
+/*    float:left;*/
     font-family:"Reenie Beanie",'Indie Flower',arial,sans-serif;
-    font-size:24pt;
+    font-size:22pt;
     font-weight: bold;
     overflow: hidden;
     background-color: rgb(232,76,61);
@@ -38,7 +38,7 @@
     -webkit-transform:rotate(4deg);
     -moz-transform:rotate(4deg);
     transform:rotate(4deg);
-    position:relative;
+   /* position:relative;*/
     top:5px;
 }
 
